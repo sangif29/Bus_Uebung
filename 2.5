@@ -1,0 +1,12 @@
+a) Die Pipe ist ein unidirektionales Kommunikationskanal zwischen zwei Prozessen, also die Kommunikation erfolgt alleinig in eine Richtung.
+In unserem Beispiel "ps | wc -l" geht dieser Kanal von der Ausgabe vom Prozess ps zum Eingang des Prozesses wc -l
+
+b) Eine Pipe verwendet man, wenn zwei Prozesse miteinander kommunizieren wollen und diese Prozesse erfolgreich terminieren sollen.
+Ein Signal führt zur Unterbrechnung des Prozesses
+
+c)  Prozesse:
+    Eltern := cpuid != 0
+    Kind_a := cpuid = 0 & gcpid !=0
+    Kind_b := gcpid = 0
+
+    Kind_a Prozess schreibt in die Pipe, währenddessen Kind_b Prozess liest
