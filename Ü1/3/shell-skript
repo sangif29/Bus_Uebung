@@ -1,0 +1,4 @@
+#!/bin/sh
+date
+echo $0
+echo $SHELL

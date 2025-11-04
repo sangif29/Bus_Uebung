@@ -1,0 +1,5 @@
+Anzahl der Gerichten mit kartoffel im Namen:
+cut speiseplan.txt -d "|" -f 5,15,25 | tr "|" "\n" | grep -i kartoffel| wc -l
+
+Verschiedenen Uhrzeiten an dem der Speiseplan des Tages veröffentlicht wurde (nur Stunden und Minuten wurden beobachtet):
+cut -d "|" -f 1 speiseplan.txt | cut -d "T" -f 2 | cut -d "." -f 1 | cut -d ":" -f 1,2| sort | uniq

@@ -1,0 +1,6 @@
+{
+    "chat.agent.enabled": false,
+    "chat.commandCenter.enabled": false,
+    "chat.detectParticipant.enabled": false,
+    "chat.checkpoints.enabled": false
+}

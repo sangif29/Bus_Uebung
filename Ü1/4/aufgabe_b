@@ -1,0 +1,10 @@
+a) cut speiseplan.txt -d "|" -f 1 | sort | head -n 1
+b) grep "2024-11" speiseplan.txt | wc -l
+c) grep -i burger speiseplan.txt | sort -r | head -n 1 | cut -d "|" -f 1
+d) cut speiseplan.txt -d "|" -f 1,7,9,11 | tr "|" " " | uniq -f 1 | head -n 2 | cut -d " " -f 1 | tail -n 1
+e) cut speiseplan.txt -d "|" -f 5 | sort | uniq | wc -l
+f) grep -i tomatisiert speiseplan.txt | cut -d "|" -f 1
+g) grep Art speiseplan.txt | cut -d "|" -f 5,15,25 | tr "|" "\n" | grep Art | wc -l
+h) grep Art speiseplan.txt | cut -d "|" -f 5,15,25 | tr "|" "\n" | grep Art | sort | uniq -c | grep 4
+i) cut speiseplan.txt -d "|" -f 3,13 | sort | grep -v Fleischlos | wc -l
+j) cut speiseplan.txt -d "|" -f 5,15,25 | tr "|" "\n" | sort | uniq -c | sort | tail -n 1
