@@ -14,7 +14,8 @@ void sig_handler (int signo)
     if (signo == SIGINT) 
     {
         counter += 1;
-        printf("Anzahl geklickte Strg+C: %d\n", counter);
+        printf("Strg+C wurde gedrückt und somit wird der Prozess terminiert");
+        exit(0);
     }
 }
 
