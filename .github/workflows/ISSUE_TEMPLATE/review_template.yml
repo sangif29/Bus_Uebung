@@ -1,0 +1,17 @@
+name: 🔎 Technisches Code-Review
+description: Vorlage für ein detailliertes Komponenten- oder Architektur-Review
+title: "[Review]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Bitte prüfe die folgenden Kriterien sorgfältig, bevor das Review freigegeben wird.
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Qualitäts-Checkliste
+      options:
+        - label: Der Code ist modular und wiederverwendbar.
+        - label: Es wurden keine temporären "TODOs" im Code vergessen.
+        - label: Die Testabdeckung (Coverage) ist nicht gesunken.
+        - label: Dokumentation im Code (Kommentare) ist aktuell.
